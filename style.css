@@ -1,0 +1,106 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Navbar */
+.topnavbar{
+    background-color: rgb(19, 19, 19);
+    overflow: hidden;
+    position: fixed;
+    width: 100vw;
+    z-index: 5000;
+}
+.topnavbar a{
+    float: left;
+    text-align: center;
+    color: rgb(255, 242, 223);
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 1.3rem;
+    transition-duration: 0.4s;
+    transition-property: background-color;
+}
+
+/* Dropdown buttons and content */
+.dropdown{
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropdown-button{
+    color: rgb(255, 242, 223);
+    font-size: 1.3rem;
+    padding: 14px 16px;
+    border: none;
+    outline: none;
+    background-color: inherit;
+    font-family: inherit;
+    text-decoration: inherit;
+    transition-duration: 0.4s;
+    transition-property: background-color;
+}
+
+.dropdown-content{
+    display: none;
+    position: fixed;
+    background-color: rgb(19, 19, 19);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 2;
+}
+
+.dropdown-content a{
+    float: none;
+    padding: 14px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left; 
+    z-index: 2;
+}
+
+.topnavbar a:hover, .dropdown-button:hover{
+    background-color: rgb(99, 99, 99);
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+/* banner */
+#banner{
+    width: 100%;
+    position: fixed;
+    z-index: -1;
+}
+
+/* main games display */
+.main-games{
+    display: inline-block;
+    margin: 10% 10.5%;
+    text-align: center;
+
+    filter: grayscale(100%);
+    transition-duration: 0.5s;
+    transition-property: filter, transform;
+    
+}
+
+.main-games img{
+    height: 300px;
+    width: 220px;
+    border-radius: 5%;
+}
+
+.main-games p{
+    margin-top: 20px;
+    color: white;
+    font-size: 1.8rem;
+    max-width: 220px;
+    font-weight: 800;
+}
+
+.main-games:hover{
+    filter: none;
+    transform: scale(1.3);
+}
