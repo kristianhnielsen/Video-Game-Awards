@@ -75,32 +75,34 @@
 }
 
 /* main games display */
-.main-games{
-    display: inline-block;
-    margin: 10% 10.5%;
+.header-game{
+    margin-top: 20%;
     text-align: center;
-
+    cursor: pointer;
     filter: grayscale(100%);
     transition-duration: 0.5s;
     transition-property: filter, transform;
-    
+}
+.games-header{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
 }
 
-.main-games img{
+.header-game img{
     height: 300px;
     width: 220px;
     border-radius: 5%;
 }
 
-.main-games p{
+.header-game p{
     margin-top: 20px;
     color: white;
     font-size: 1.8rem;
-    max-width: 220px;
     font-weight: 800;
 }
 
-.main-games:hover{
+.header-game:hover{
     filter: none;
     transform: scale(1.3);
 }
