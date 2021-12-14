@@ -5,6 +5,14 @@
     z-index: -1;
 }
 
+h1{
+    padding-top: 5%;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    color: snow;
+}
+
 /* main games display */
 .header-game{
     margin-top: 20%;
